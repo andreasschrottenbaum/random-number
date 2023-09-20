@@ -5,8 +5,8 @@ const containerEl = document.querySelector('main'),
   retryButton = document.querySelector('#retry'),
   resultText = document.querySelector('#result-text'),
   tryCounter = document.querySelector('#try-counter'),
-  score = document.querySelector('#score')
-endText = document.querySelector('#end-text')
+  score = document.querySelector('#score'),
+  endText = document.querySelector('#end-text')
 
 let successCount = 0,
   tryCount = 0
