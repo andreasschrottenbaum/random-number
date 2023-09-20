@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Number</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <p class="header">
-        Enter any number <br />
-        that is between 0 and 5
-      </p>
-      <input
-        type="number"
-        name="random-number"
-        id="user-number-input"
-        class="user-number-input"
-      />
-      <button id="check-button" class="check-button">Check</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Number</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main>
+    <header>
+      Enter any number <br />
+      that is between 0 and 5
+    </header>
+
+    <form onsubmit="return false">
+      <input type="number" name="random-number" id="user-number-input" class="user-number-input" min="0" max="5"
+        required />
+
+      <button type="submit" id="check" class="check-button">Check</button>
+
       <p id="result-text"></p>
+      <p id="end-text" class="hidden">Sorry you've reached a maximum tries</p>
       <p id="try-counter"></p>
-      <button id="retry" class="retry display-none-retry-button">Retry</button>
-      <p id="score"></p>
-    </div>
-    <!--  -->
-    <script src="script.js"></script>
-    <!--  -->
-  </body>
+
+      <button type="submit" id="retry" class="retry hidden">Retry</button>
+    </form>
+
+
+    <p id="score"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
